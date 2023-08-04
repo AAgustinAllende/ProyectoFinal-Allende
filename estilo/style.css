@@ -1,7 +1,102 @@
 body{
-    margin: 0;
-    background-image:url(../imag/f.elconfidencial.com_original_47e_9eb_77d_47e9eb77d0fefdfeee960de4ba13aeb8.jpg);
-    background-attachment:local;
-    background-size:cover;
-    height: 100%;
+    background-color:#c1d7f0;
 }
+#home{
+    background-image:url(../imag/f.elconfidencial.com_original_47e_9eb_77d_47e9eb77d0fefdfeee960de4ba13aeb8.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+
+}
+.nav-item{
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+.nav-item img{
+    width: 30px;
+    height: 30px;
+}
+.dropdown{
+    margin-right: 85px;
+}
+#username, #pass{
+    margin-left: 10px;
+}
+.btn-ingreso{
+    background-color: transparent;
+}
+.btn-light{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 55px;
+
+}
+#home img{
+    width: 35px;
+    height: 35px;
+}
+#a, #b{
+    margin-left: 10px;
+    margin-bottom: 2%;
+    opacity: 0.5;
+}
+.placeInput{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+.order{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+}
+.order, .order2 input{
+    height: 50px;
+    justify-content: center;
+}
+.order2{
+    margin-top: 20%;
+}
+.accordion-flush{
+    opacity: 0.8;
+}
+.placeInput2{
+    margin-top: 10%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+}
+.travel-date{
+    margin-top: 2em;
+    width: 100%;
+    border-radius: 10px;
+}
+.general{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+.btn-mio{
+    background-color: white;
+    opacity: 0.8;
+    margin-bottom: 15%;
+}
+#cartas{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+}
+.nacional{
+    margin-bottom: 5%;
+}
+.nacional img{
+    height: 20rem;
+}
+

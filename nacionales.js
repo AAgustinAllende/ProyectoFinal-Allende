@@ -2,37 +2,37 @@ let destinosLocales = [
     {
       destino: "Cataratas del Iguazú",
       aerolineas: ["Aerolíneas Argentinas", "LATAM", "Flybondi","GOL"],
-      vuelos: 10,
+      foto: "../imag/158835.webp",
       precio: 55000
     },
     {
-      destino: "Bariloche",
+      destino: "San Carlos de Bariloche",
       aerolineas: ["Aerolineas Argentinas", "Avianca", "JetSMART"],
-      vuelos: 5,
+      foto: "../imag/Bariloche-postada.jpg",
       precio: 80000
     },
     {
       destino: "Jujuy",
       aerolineas: ["GOL", "Aerolíneas Argentinas", "Austral"],
-      vuelos: 8,
+      foto: "../imag/jujuy.jpg",
       precio: 50000
     },
     {
       destino: "Mendoza",
       aerolineas: ["Aerolíneas Argentinas", "LATAM", "Flybondi", "JetSMART"],
-      vuelos: 6,
+      foto: "../imag/mendoza.jpg",
       precio: 40000
     },
     {
       destino: "Ushuaia",
       aerolineas: ["Austral, Aerolineas Argentinas, Andes, LATAM"],
-      vuelos: 5,
+      foto:"../imag/ushuaia.jpg",
       precio: 105000
     },
     {
       destino: "Buenos Aires",
       aerolineas: ["Austral","Avianca","Aerolineas Argentinas", "Flybondi"],
-      vuelos: 9,
+      foto: "../imag/obelisco_buenos-aires-1.jpg",
       precio: 30000
     }
   ];

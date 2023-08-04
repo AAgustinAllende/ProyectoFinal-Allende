@@ -3,13 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilo/style.css">
     <title>Landing</title>
 </head>
 <body>
+    <header>
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./imag/boletos-de-avion.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"><i>
+                    FlySky</i></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./pages/vuelos.html"><img src="./imag/avion.png" alt="">Vuelos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a  class="nav-link"  href="#"><img src="./imag/llave-del-cuarto.png" alt="">Alojamientos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="./imag/vacaciones.png" alt="">Paquetes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="./imag/gran-venta.png" alt="">Ofertas</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-ingreso dropdown-toggle" id="hola" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./imag/usuario.png" alt="" width="25px" height="25px">           Ingresar               
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" id="continue" href="#"><img src="./imag/google.png" alt="" width="20px" height="20px">  Continuar con Google</a></li>
+                <li><a>Usuario</a>
+                  <input id="username" type="text">
+                  <a>Contraseña</a>
+                  <input id="pass" type="password">
+                  <button type="button" class="btn btn-light" id="log-in">Continuar</button>
+
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
     <main>
-        <h1>Landing</h1>
-    </main>
+        <div id="home">
+            <section class="general">
+                <section class="placeInput"> 
+                    <div class="order">
+                        <img src="./imag/despegar.png" alt=""> <input type="text" name="" id="a" placeholder="Origen">
+                    </div>
+                    <div class="order2">
+                        <img src="./imag/ubicacion.png" alt=""> <input type="text" name="" id="b" placeholder="Destino">  
+                    </div> 
+                </section>
+                <section class="placeInput2">
+                    <div class="dropdown">
+                        <button class="btn btn-mio dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="./imag/pasajero.png" alt="">Seleccione la cantidad de pasajeros
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">1</a></li>
+                          <li><a class="dropdown-item" href="#">2</a></li>
+                          <li><a class="dropdown-item" href="#">3</a></li>
+                        </ul>
+                      </div>
+                      <div class="dropdown">
+                        <button class="btn btn-mio dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="./imag/calendario.png" alt="">Seleccione una fecha
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Aca va un calendario</a></li>
+                        </ul>
+                      </div>
+            </section>
+            
+        </section>
+        <button class="btn btn-primary">Buscar</button>
+    </div>
+    
+
+</main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="nacionales.js"></script>
     <script src="internacionales.js"></script>
     <script src="code.js"></script>
