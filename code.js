@@ -1,144 +1,127 @@
-// const destinos = destinosLocales.concat(destinosInternacionales);
+//proceso de LogIn
+let usuario = document.getElementById("username");
+let clave = document.getElementById("pass");
+if(usuario=="Agustin" || usuario=="Agustin" && clave == "1234"){
+  console.log("Bienvenido " + usuario)
 
-// destinosLocales.forEach(destino => {
-//   destino.aerolineas = destino.aerolineas.join(", ");
-// });
-// destinosInternacionales.forEach(destino => {
-//   destino.aerolineas = destino.aerolineas.join(", ");
-// });
+}else{
+  console.log("datos incorrectos");
+}
+const logIn = document.getElementById("continue");
+const ingreso = document.getElementById("hola");
+const registro = document.getElementById("log-in");
+logIn.onclick = () =>{
+  ingreso.innerText = "Agustin Allende";
+  registro.innerText = "Salir";
+  logIn.innerText = "Mi perfil";
 
-// //filtrado 
-//   function filtro (precioMax){
-//     const filtrado = destinos.filter((destino) => destino.precio <= precioMax);
-//     return filtrado;
-//  }
-  
-// //autenticacion del usuario 
-//  for(let i=1;i<=3;i++){
-//      let usuario = prompt("Ingrese el nombre del usuario:"); 
-//      let clave = prompt("Ingrese la contraseña:");
-//      if(usuario=="Agustin" || usuario == "agustin" && clave=="1234"){
-//          alert("Bienvenido " + usuario);
-//          break;
-//      }else{
-//          alert("Usuario y/contraseña incorrectos. Por favor,inténtalo de nuevo");
-//      }
-//  }
-// //Ingreso de fechas
-// let fechaIda = prompt("Ingrese una fecha de viaje (dd/mm/aaaa): ");
-// console.log("Fecha de viaje: " + fechaIda);
-// let fechaRegreso = prompt("Ingrese la fecha de regreso (dd/mm/aaaa): ");
-// console.log("Fecha de regreso: " + fechaRegreso);
+}
 
-// // funcion find
-// const nombreBuscado = prompt("Ingrese el nombre del destino que desea buscar:");
-//  const encontrado = destinos.find(destino => destino.destino.toLowerCase() === nombreBuscado.toLowerCase());
+let carro=JSON.parse(localStorage.getItem("carrito")) || [];
+let cantidad = document.getElementById("cantidad");
+cantidad.innerText=`${carro.length}`;
 
-// if (encontrado) {
-//   console.log("Destino encontrado:");
-//   console.table(encontrado);
-// } else {
-//   console.log("Destino no encontrado. Verifique el nombre e intente nuevamente.");
-// }
-// //ingreso de datos para llevar a cabo el filtro (linea 11)
-// let inputFiltro = parseFloat(prompt("Ingrese un precio maximo (0-para salir)"));
-//  while(inputFiltro != 0 ){
-//    if(isNaN(inputFiltro) || inputFiltro < 0){
-//      alert("Numero inválido. Intente nuevamente");
-//    }else{
-//      let inputFiltrado = filtro (inputFiltro);
-//      console.table(inputFiltrado);
-//    }
-//    inputFiltro = parseFloat(prompt("Ingrese un precio maximo (0-para salir)"));
-//  }
-// // Menú principal
-//  let opcion = prompt("Seleccione una opcion:\n1-Vuelos\n 2-Alojamiento\n 3-Paquetes\n 4-Ofertas \n 0-exit");
- 
-//  let descuento =0.7;
-//  while(opcion != 0){
-//      switch(opcion){
-//          case "1":
-//              alert("Mostrando resultado de vuelos disponibles");
-//              let vuelo=prompt("Seleccione un destino:\n a-Nacional\n b-Internacional");
-//              if (vuelo == "a"){
-//                  alert("Mostrando los destinos nacionales");
-//                  console.table(destinosLocales);
-//              }else{
-//                  alert("Mostrando los destinos alrededor del mundo");
-//                  alert("Destinos mas elegidos:");
-//                  console.table(destinosInternacionales);
-                 
-//              }
-//              break;
-//          case "2":
-//              alert("Mostrando resultados de alojamientos disponibles");
-//              alert("1-Hotel\n2-Resorts\n3-Apartamento\n4-Casas");
-//              break;
-//          case "3":
-//              alert("Mostrando resultado de paquetes turisticos disponibles");
-//              break;
-//          case "4":
-//              alert("Mostrando las mejores ofertas");
-//              alert("Destinos nacionales 30% OFF");
-            
-//              descontar("Cataratas del Iguazu $" , 55000*descuento);
-//              descontar("Jujuy $", 50000*descuento);
-//              descontar("Mendoza $", 40000*descuento);
-//              descontar("Buenos Aires $", 30000*descuento);
-//              descontar("Bariloche $", 80000*descuento);
-//              descontar("San Martin de los Andes $",88000*descuento);
-//              descontar("Ushuaia $", 105000*descuento);
-//              break;
-//          default:
-//              alert("La opcion que elegiste no existe");
-//              break;
-//      }
-//      opcion = prompt("Seleccione una opcion:\n1-Vuelos\n 2-Alojamiento\n 3-Paquetes\n 4-Ofertas \n 0-exit");   
-//  }
-//  function descontar(localidad,precio){
-//      alert(localidad + precio);
-//  }
- 
-let articuloCartas = document.getElementById("cartas");
-for (const producto of destinosLocales){
-  articuloCartas.innerHTML += `
-  <div class="card nacional" style="width: 50rem;">
+
+if(carro.length =! 0){
+     for (const viaje of carro){
+       document.getElementById("tablabody").innerHTML +=`
+     <tr>
+         <td>${viaje.id}</td>
+         <td>${viaje.destino}</td>
+         <td>${viaje.precio}</td>
+     </tr>
+     `;
+
+   let total = carro.reduce((acumulador,producto) => acumulador + producto.precio, 0);
+   document.getElementById("total").innerText = "Total a pagar $: " + total;
+ }
+}
+
+//agregar las cards
+let cards = document.getElementById("cartas");
+let tablabody = document.getElementById("tablabody");
+
+
+for (let i = 0; i < destinosLocales.length; i++) {
+  let producto = destinosLocales[i];
+  cards.innerHTML += `
+  <div class="card" style="width: 18rem;">
   <img src=${producto.foto} class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">${producto.destino}</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-  `
+    <p class="card-text">${producto.precio}</p>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom${i}" aria-controls="offcanvasBottom${i}">Mostrar detalles</button>
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom${i}" aria-labelledby="offcanvasBottomLabel${i}">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasBottomLabel${i}">${producto.destino}</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        Aerolíneas:<br> <img src="./imag/avioncito.png" width="50px" height="50px">  ${producto.aerolineas.join(", ")}
+
+      </div>
+    </div>
+    
+    <button  id=${producto.id} class="compra">Agregar al carrito</button> 
+  `;  
 }
 
-let cardsDeAfuera = document.getElementById("cartasA");
-for (const lugares of destinosInternacionales){
-  cardsDeAfuera.innerHTML += `
-  <div class="card nacional" style="width: 50rem;">
-  <img src=${lugares.foto} class="card-img-top" alt="...">
+
+let botones = document.getElementsByClassName("compra");
+for (const boton of botones){
+  boton.addEventListener("click",() =>{
+    console.log("hiciste clic en: " + boton.id);
+    const prodACarrito = destinosLocales.find((producto) => producto.id == boton.id);
+    console.log(prodACarrito);
+    agregarACarrito(prodACarrito);
+  })
+}
+
+function agregarACarrito(prod){
+  carro.push(prod);
+  cantidad.innerText=`${carro.length}`;
+  console.table(carro);
+  // alert("EStamos preparando tu viaje a "+prod.destino);
+  tablabody.innerHTML += `
+    <tr>
+    <td>${prod.id}</td>
+    <td>${prod.destino}</td>
+    <td>${prod.precio}</td>
+    </tr>
+  `;
+  //incrementar el total
+  let total = carro.reduce((acumulador,producto) => acumulador + producto.precio, 0);
+  document.getElementById("total").innerText = "Total a pagar $: " + total;
+  //localStorage
+  localStorage.setItem("carrito",JSON.stringify(carro));
+}
+
+let finalizarBtn = document.getElementById("finalizar");
+
+finalizarBtn.onclick = () => {
+  carro = [];
+  document.getElementById("tablabody").innerHTML="";
+  cantidad.innerText=`${carro.length}`;
+  document.getElementById("total").innerText = "Total a pagar $: ";
+  localStorage.removeItem("carrito");
+}
+
+
+let extranjero = document.getElementById ("cardsInternacionales");
+for (const producto of destinosInternacionales){
+  extranjero.innerHTML += `
+  <div class="card" style="width: 18rem;">
+  <img src=${producto.foto} class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">${lugares.destino}</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">${producto.destino}</h5>
+    <p class="card-text">${producto.precio}</p>
+    <a href="#" class="btn btn-primary">Ir</a>
   </div>
 </div>
   `
 }
+// const aerolineas = document.getElementById("aerolineas");
+// let ver = document.getElementById("disponibilidad");
+// ver.onclick = () =>{
 
-const ingresar = document.getElementById("hola");
-const logIn = document.getElementById("log-in");
-const google = document.getElementById("continue");
-
-logIn.onclick = () => {
-  ingresar.innerText = "Agustin Allende";
-}
-google.onclick = () =>{
-  ingresar.innerText = "Agustin Allende";
-  google.innerText = "Mi perfil";
-  logIn.innerText = "Cerrar sesión";
-
-}
-
- 
+// }
