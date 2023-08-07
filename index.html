@@ -10,7 +10,7 @@
 <body>
     <header>
           <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
+            <div class="container-fluid barra">
               <a class="navbar-brand" href="#">
                 <img src="./imag/boletos-de-avion.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"><i>
                     FlySky</i></a>
@@ -31,6 +31,9 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#"><img src="./imag/gran-venta.png" alt="">Ofertas</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#ticket"><img src="./imag/tarjeta-de-embarque.png" alt=""></a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -40,13 +43,14 @@
               </button>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" id="continue" href="#"><img src="./imag/google.png" alt="" width="20px" height="20px">  Continuar con Google</a></li>
-                <li><a>Usuario</a>
+                <li id="campoUser"><a>Usuario</a>
                   <input id="username" type="text">
                   <a>Contraseña</a>
                   <input id="pass" type="password">
+                </li>
                   <button type="button" class="btn btn-light" id="log-in">Continuar</button>
 
-                </li>
+                
               </ul>
             </div>
           </nav>
@@ -93,7 +97,7 @@
         
         
       </article>
-      <section>
+      <section id="ticket">
         <h4>Tu carrito:</h4>
         <p id="cantidad">
           <!-- resultados de la cantidad -->

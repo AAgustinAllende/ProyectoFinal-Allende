@@ -1,28 +1,45 @@
 //proceso de LogIn
-let usuario = document.getElementById("username");
-let clave = document.getElementById("pass");
-if(usuario=="Agustin" || usuario=="Agustin" && clave == "1234"){
-  console.log("Bienvenido " + usuario)
 
-}else{
-  console.log("datos incorrectos");
-}
-const logIn = document.getElementById("continue");
-const ingreso = document.getElementById("hola");
-const registro = document.getElementById("log-in");
+
+let user = document.getElementById("campoUser");
+const logIn = document.getElementById("log-in");
+const ingreso = document.getElementById("username");
+const registro = document.getElementById("pass");
+let cambio = document.getElementById("hola");
+let google = document.getElementById("continue")
 logIn.onclick = () =>{
-  ingreso.innerText = "Agustin Allende";
-  registro.innerText = "Salir";
-  logIn.innerText = "Mi perfil";
-
+ let usuario = ingreso.value;
+ let clave = registro.value;
+ if(usuario == "Agustin" || usuario == "agustin" && clave == "1234"){
+  console.log("Bienvenido " + usuario);
+  cambio.innerText = "Agustin Allende";
+  user.innerHTML = `
+  <button type="button" class="btn btn-light">Mis puntos</button>
+  <button type="button" class="btn btn-light">Mis viajes</button>
+  `
+   logIn.innerText = "Salir";
+   google.innerText = "Mi perfil";
+}else{
+  alert("Datos incorrectos");
+}
 }
 
+google.onclick = () => {
+  cambio.innerText = "Agustin Allende";
+  user.innerHTML = `
+  <button type="button" class="btn btn-light">Mis puntos</button>
+  <button type="button" class="btn btn-light">Mis viajes</button>
+  `
+   logIn.innerText = "Salir";
+   google.innerText = "Mi perfil";
+   localStorage.setItem("usuario", "Agustin Allende");
+}
 let carro=JSON.parse(localStorage.getItem("carrito")) || [];
 let cantidad = document.getElementById("cantidad");
 cantidad.innerText=`${carro.length}`;
 
 
-if(carro.length =! 0){
+if(carro.length != 0){
      for (const viaje of carro){
        document.getElementById("tablabody").innerHTML +=`
      <tr>

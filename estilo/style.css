@@ -7,8 +7,13 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
+    height: 700px;
 
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 .nav-item{
     justify-items: center;
@@ -48,6 +53,7 @@ body{
     margin-left: 8px;
 }
 .input1{
+    padding-top: 10%;
     display: flex;
     flex-direction: column;
 }
