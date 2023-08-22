@@ -1,5 +1,6 @@
 let destinosInternacionales = [
     {
+      id: 1,
       pais: "Italia",
       destino: "Roma",
       aerolineas: ["Alitalia", "Ryanair", "Vueling", "Lufthansa"],
@@ -7,6 +8,7 @@ let destinosInternacionales = [
       foto: "./imag/roma.jpg",
     },
     {
+      id:2,
       pais: "Italia",
       destino: "Milán",
       aerolineas: ["Ryanair", "EasyJet", "Wizz Air", "Iberia"],
@@ -14,6 +16,7 @@ let destinosInternacionales = [
       foto: "./imag/milan.webp"
     },
     {
+      id:3,
       pais: "Italia",
       destino: "Venecia",
       aerolineas: ["Vueling", "Alitalia", "Eurowings", "Volotea"],
@@ -21,6 +24,7 @@ let destinosInternacionales = [
       foto: "./imag/800.jpg"
     },
     {
+      id:3,
       pais: "Alemania",
       destino: "Berlín",
       aerolineas: ["Lufthansa", "Ryanair", "EasyJet", "Eurowings"],
@@ -28,6 +32,7 @@ let destinosInternacionales = [
       foto: "./imag/berlin.webp"
     },
     {
+        id:4,
         pais: "Alemania",
         destino: "Múnich",
         aerolineas: ["Lufthansa", "Vueling", "Iberia", "Eurowings"],
@@ -35,20 +40,23 @@ let destinosInternacionales = [
         foto: "./imag/munich.jpg"
     },
     {
-        pais: "Alemania",
-        destino: "Hamburgo",
-        aerolineas: ["Ryanair", "Eurowings", "EasyJet", "Wizz Air"],
-        precio: 349750,
-        foto: "./imag/hamburgo-hermany.jpg"
+      id:5,
+      pais: "Alemania",
+      destino: "Hamburgo",
+      aerolineas: ["Ryanair", "Eurowings", "EasyJet", "Wizz Air"],
+      precio: 349750,
+     foto: "./imag/hamburgo_2.jpg"
     },
     {
-        pais: "Alemania",
-        destino: "Fránkfurt",
-        aerolineas: ["Lufthansa", "Air France", "KLM", "British Airways"],
-        precio: 351300,
-        foto: "./imag/imag/Frankfurt_.jpg"
+      id:6,
+      pais: "Alemania",
+      destino: "Fránkfurt",
+      aerolineas: ["Lufthansa", "Air France", "KLM", "British Airways"],
+      precio: 351300,
+      foto: "./imag/frankfurt_2.jpg"
     },
     {
+      id:7,
         pais: "Estados Unidos",
         destino: "Nueva York",
         aerolineas: ["American Airlines", "Delta Airlines", "United Airlines", "JetBlue"],
@@ -56,6 +64,7 @@ let destinosInternacionales = [
         foto: "./imag/News_ny.jpg"
     },
     {
+      id:8,
         pais: "Estados Unidos",
         destino: "Miami",
         aerolineas: ["American Airlines", "Delta Airlines", "JetBlue", "Southwest Airlines"],
@@ -63,6 +72,7 @@ let destinosInternacionales = [
         foto: "./imag/miami.jpg"
     },
     {
+      id:9,
         pais: "Estados Unidos",
         destino: "Orlando",
         aerolineas: ["Southwest Airlines", "JetBlue", "Delta Airlines", "United Airlines"],

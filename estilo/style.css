@@ -35,6 +35,9 @@ header{
 }
 .general{
     margin-left: 25%;
+    display: flex;
+    flex-direction: column;
+
 }
 .pasajero{
     display: flex;
@@ -57,4 +60,71 @@ header{
     display: flex;
     flex-direction: column;
 }
+.input2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50%;
+    margin-top: -25%;
+}
+#inputFechaIda, #inputFechaVuelta, #btnBuscar{
+    width: 40%;
+    height: 37px;
+    border-radius: 7px;
+    border-color: lightgray;
+}
+#inputFechaVuelta{
+    margin-top: 16%;
+}
+#btnBuscar{
+    margin-top: 14%;
+}
+#cartas, #cardsInternacionales{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.nacional, .internacional{
+    display: flex;
+    margin-top: 5%;
+}
+.card img{
+    padding-left: 0%;
+    padding-right: 0%;
+    height: 300px;
+}
+.row{
+    --bs-gutter-x:0;
+}
 
+/* alojamientos */
+.menuDeAlojamiento{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.houseSection{
+    width: 20%;
+    height: 20%;
+    margin-right: 0;
+    margin-left: 0;
+}
+.carousel-item img{
+    height: 160px;
+}
+
+/* seccion paquetes */
+.packs{
+    margin-top: 5%;
+    background-image:url(../imag/portada-paquetes.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size:cover;
+    height: 600px;
+    
+}
+.packs img{
+    margin-top: 22%;
+    margin-right: 2%;
+}
