@@ -1,6 +1,6 @@
 let paquetesBariloche = [
     {
-      id:"abc",
+      id:1,
         nombre: "Aventura en los Andes",
         destino: "San Carlos de Bariloche",
         duracion: "6 días",
@@ -9,7 +9,7 @@ let paquetesBariloche = [
         imagen: "./imag/excursion-brc1.jpg"
     },
     {
-      id:"bjbd",
+      id:11,
         nombre: "Escapada invernal",
         destino: "San Carlos de Bariloche",
         duracion: "4 días",
@@ -18,7 +18,7 @@ let paquetesBariloche = [
         imagen: "./imag/brc-exc2.jpg"
     },
     {
-      id:"ncjkbdhjb",
+      id:12,
         nombre: "Gastronomía y naturaleza",
         destino: "San Carlos de Bariloche",
         duracion: "5 días",
@@ -27,7 +27,7 @@ let paquetesBariloche = [
         imagen: "./imag/brc-exc3.jpg"
     },
     {
-      id:"hshvs",
+      id:13,
         nombre: "Aventura en el lago",
         destino: "San Carlos de Bariloche",
         duracion: "3 días",
@@ -36,7 +36,7 @@ let paquetesBariloche = [
         imagen: "./imag/brc-exc4.jpg"
     },
     {
-      id:"vdehgbd",
+      id:14,
         nombre: "Relax en la montaña",
         destino: "San Carlos de Bariloche",
         duracion: "7 días",

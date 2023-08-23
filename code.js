@@ -6,18 +6,6 @@ const registro = document.getElementById("pass");
 let cambio = document.getElementById("hola");
 let google = document.getElementById("continue");
 
-const initialState = {
-  cambioText: "Agustin Allende",
-  userContent: `
-    <button type="button" class="btn btn-light">Mis puntos</button>
-    <button type="button" class="btn btn-light">Mis viajes</button>
-  `,
-  logInText: "Salir",
-  googleText: "Mi perfil"
-};
-
-// Guarda el estado actual
-let currentState = { ...initialState };
 
 function autenticar() {
   let usuario = ingreso.value;
@@ -38,17 +26,7 @@ function autenticar() {
 }
 
 function cerrarSesion() {
-  // Restaura los elementos y su contenido al estado inicial
-  cambio.innerText = currentState.cambioText;
-  user.innerHTML = currentState.userContent;
-  logIn.innerText = currentState.logInText;
-  google.innerText = currentState.googleText;
-
-  // Restaura el evento onclick para autenticar
-  logIn.onclick = autenticar;
-
-  // Remueve el elemento "usuario" del almacenamiento local
-  localStorage.removeItem("usuario");
+  // rever
 }
 
 function entrarPorGoogle() {
@@ -158,7 +136,7 @@ function mostrarPaquetes(inputDestino){
               <p class="card-text">${paquetes.descripcion}</p>
               <h5>${paquetes.precio}</h5>
               <p class="card-text"><small class="text-body-secondary">${paquetes.duracion}</small></p>
-              <button  id=${paquetes.id} class="compra btn btn-primary">Agregar al carrito</button>
+              <button  data-id=${paquetes.id} class="compra btn btn-primary">Agregar al carrito</button>
 
             </div>
           </div>
@@ -205,7 +183,7 @@ function mostrarPaquetes(inputDestino){
               <p class="card-text">${paquetes.descripcion}</p>
               <h5>${paquetes.precio}</h5>
               <p class="card-text"><small class="text-body-secondary">${paquetes.duracion}</small></p>
-              <button  id=${paquetes.id} class="compra btn btn-primary">Agregar al carrito</button>
+              <button  id="pack_${paquetes.id}" class="compra btn btn-primary">Agregar al carrito</button>
             </div>
           </div>
         </div>
@@ -288,22 +266,21 @@ for (const boton of botones){
     console.log("hiciste clic en: " + boton.id);
     const prodACarrito = destinosLocales.find((producto) => producto.id == boton.id);
     const prodInternacionalACarrito = destinosInternacionales.find((producto) => producto.id == boton.id);
-    const packAlCarrito = paquetesBariloche.find((producto) => producto.id == boton.id);
+    const seleccionMendoza = packagesMendoza.find((producto) => producto.id == boton.id);
     if(prodACarrito){
       agregarACarrito(prodACarrito);
     }else if (prodInternacionalACarrito){
       agregarACarrito(prodInternacionalACarrito);
-    }else if(packAlCarrito){
-      agregarACarrito(packAlCarrito);
     }
   })
 }
+
+
 
 function agregarACarrito(prod){
   carro.push(prod);
   cantidad.innerText=`${carro.length}`;
   console.table(carro);
-  // alert("EStamos preparando tu viaje a "+prod.destino);
   tablabody.innerHTML += `
     <tr>
     <td>${prod.id}</td>
@@ -360,5 +337,24 @@ mostrarPaquetes(valorDestino);
 
 };
 
+//get
+function obtenerAlojamientos(){
+  const MIJSON = "/alojamientos.json";
+  fetch(MIJSON)
+  .then((resultado) => resultado.json())
+  .then((data) => {
+    console.log(data);
+    const listaAlojamientos = data.Bariloche
+    console.log(listaAlojamientos);
+    listaAlojamientos.forEach(alojamiento => {
+      document.getElementById("resultadosAlojamientos").innerHTML += `
+      <h2>${alojamiento.nombre}</h2>
+      `
+      
+    });
+  })
+}
+
+obtenerAlojamientos();
 
 

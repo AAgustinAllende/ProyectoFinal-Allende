@@ -5,8 +5,8 @@
     "tipo": "hotel",
     "puntuacion": 9,
     "precio": 65530,
-    "imagen1":"",
-    "imagen2":""
+    "imagen1":"./imag/1.jpg",
+    "imagen2":"./imag/2.jpg"
   },
   {
     "nombre": "Hotel 7 Lagos",
@@ -14,8 +14,8 @@
     "tipo": "hotel",
     "puntuacion": 8,
     "precio": 30900,
-    "imagen1":"",
-    "imagen2":""
+    "imagen1":"./imag/3.jpg",
+    "imagen2":"./imag/4.jpg"
   },
   {
     "nombre": "Gran Hotel Panamericano",
@@ -23,8 +23,8 @@
     "tipo": "hotel",
     "puntuacion":8,
     "precio":25000,
-    "imagen1":"",
-    "imagen2":""
+    "imagen1":"./imag/5.jpg",
+    "imagen2":"./imag/6.jpg"
   },
   {
     "nombre":"Hotel Nevada",
@@ -32,8 +32,8 @@
     "tipo": "hotel",
     "puntuacion": 7.9,
     "precio": 54000,
-    "imagen1":"",
-    "imagen2":""
+    "imagen1":"./imag/7.jpg",
+    "imagen2":"./imag/8.jpg"
   },
   {
     "nombre":"Bariloche X",
@@ -41,8 +41,8 @@
     "tipo": "casa",
     "puntuacion": 7.9,
     "precio": 38000,
-    "imagen1":"",
-    "imagen2":""
+    "imagen1":"./imag/9.webp",
+    "imagen2":"./imag/10.webp"
   },
   {
     "nombre":"Alhue",
@@ -50,8 +50,8 @@
     "tipo": "casa",
     "puntuacion": 9,
     "precio": 105000,
-    "imagen1":"",
-    "imagen2":""
+    "imagen1":"./imag/11.webp",
+    "imagen2":"./imag/12.webp"
   },
   {
     "nombre":"De Colores",
@@ -59,8 +59,8 @@
     "tipo": "casa",
     "puntuacion": 8.5,
     "precio": 78900,
-    "imagen1":"",
-    "imagen2":""
+    "imagen1":"./imag/13.webp",
+    "imagen2":"./imag/14.webp"
   },
   {
     "nombre":"Belgrano Decks Departamentos",
@@ -68,8 +68,8 @@
     "tipo": "depto",
     "puntuacion": 8.9,
     "precio": 23000,
-    "imagen1":"",
-    "imagen2":""
+    "imagen1":"./imag/15.webp",
+    "imagen2":"./imag/16.webp"
   },
   {
     "nombre":"Xima Aparts",
@@ -77,8 +77,8 @@
     "tipo": "depto",
     "puntuacion": 7.9,
     "precio": 37000,
-    "imagen1":"",
-    "imagen2":""
+    "imagen1":"./imag/17.webp",
+    "imagen2":"./imag/18.webp"
   },
   {
     "nombre":"Apartamentos Cardinal Bariloche",
@@ -86,8 +86,8 @@
     "tipo": "depto",
     "puntuacion": 8.3,
     "precio": 42000,
-    "imagen1":"",
-    "imagen2":""
+    "imagen1":"./imag/19.webp",
+    "imagen2":"./imag/20.webp"
   },
   {
     "nombre":"Cabañas del trebol",
@@ -95,8 +95,8 @@
     "tipo": "cabaña",
     "puntuacion": 7.9,
     "precio": 40000,
-    "imagen1":"",
-    "imagen2":""
+    "imagen1":"./imag/21.webp",
+    "imagen2":"./imag/22.webp"
   },
   {
     "nombre":"Cabañas Villa Pañil",
@@ -104,8 +104,8 @@
     "tipo": "cabaña",
     "puntuacion": 8.4,
     "precio": 54000,
-    "imagen1":"",
-    "imagen2":""
+    "imagen1":"./imag/23.webp",
+    "imagen2":"./imag/24.webp"
   },
   {
     "nombre":"Cabañas Villa Campanario",
@@ -113,218 +113,210 @@
     "tipo": "cabaña",
     "puntuacion": 8.7,
     "precio": 67500,
-    "imagen1":"",
-    "imagen2":""
+    "imagen1":"./imag/26.webp",
+    "imagen2":"./imag/25.webp"
   }
-] 
+],
+"Iguazu": [{
+  "nombre":"Hotel Saint George",
+  "ubicacion":"Puerto Iguazu",
+  "tipo": "Hotel",
+  "puntuacion": 8.7,
+  "precio": 52500,
+  "imagen1":"./imag/27.webp",
+  "imagen2":"./imag/28.webp"
+  },
+  {
+  "nombre":"Merit Iguazu Hotel",
+  "ubicacion":"Puerto Iguazu",
+  "tipo": "Hotel",
+  "puntuacion": 8.8,
+  "precio": 54500,
+  "imagen1":"./imag/29.webp",
+  "imagen2":"./imag/30.webp"
+  },
+  {
+  "nombre":"Village Cataratas",
+  "ubicacion":"Puerto Iguazu",
+  "tipo": "Hotel",
+  "puntuacion": 7.9,
+  "precio": 59500,
+  "imagen1":"./imag/31.webp",
+  "imagen2":"./imag/32.webp"
+  },
+  {
+  "nombre":"Terra Iguazu Cabañas",
+  "ubicacion":"Puerto Iguazu",
+  "tipo": "Cabañas",
+  "puntuacion": 8.6,
+  "precio": 26500,
+  "imagen1":"./imag/33.webp",
+  "imagen2":"./imag/34.webp"
+  },
+  {
+    "nombre":"Estrella del Monte",
+  "ubicacion":"Puerto Iguazu",
+  "tipo": "Cabañas",
+  "puntuacion": 7.9,
+  "precio": 24500,
+  "imagen1":"./imag/35.webp",
+  "imagen2":"./imag/36.webp"
+  },
+  {
+    "nombre":"Costa del Sol Iguazu",
+  "ubicacion":"Puerto Iguazu",
+  "tipo": "Cabañas",
+  "puntuacion": 9.3,
+  "precio": 32700,
+  "imagen1":"./imag/37.webp",
+  "imagen2":"./imag/38.webp"
+  },
+  {
+    "nombre":"Z Aparts Iguazu",
+  "ubicacion":"Puerto Iguazu",
+  "tipo": "depto",
+  "puntuacion": 9.1,
+  "precio": 41500,
+  "imagen1":"./imag/39.webp",
+  "imagen2":"./imag/40.webp"
+  },
+  {
+    "nombre":"Naipi Apart",
+  "ubicacion":"Puerto Iguazu",
+  "tipo": "depto",
+  "puntuacion": 8.5,
+  "precio": 28300,
+  "imagen1":"./imag/41.webp",
+  "imagen2":"./imag/42.webp"
+  },
+  {
+    "nombre":"Departamentos Tres Fronteras",
+  "ubicacion":"Puerto Iguazu",
+  "tipo": "depto",
+  "puntuacion": 7.7,
+  "precio": 23200,
+  "imagen1":"./imag/43.webp",
+  "imagen2":"./imag/44.webp"
+  },
+  {
+    "nombre":"Casa 24",
+  "ubicacion":"Puerto Iguazu",
+  "tipo": "casa",
+  "puntuacion": 7.9,
+  "precio": 41500,
+  "imagen1":"./imag/45.webp",
+  "imagen2":"./imag/46.webp"
+  },
+  {
+    "nombre":"Alquiler Cataratas",
+  "ubicacion":"Puerto Iguazu",
+  "tipo": "casa",
+  "puntuacion": 7.2,
+  "precio": 24800,
+  "imagen1":"./imag/47.webp",
+  "imagen2":"./imag/48.webp"
+  }
+],
+"TdF":[{
+  "nombre":"Albatros Hotel",
+  "ubicacion":"Ushuaia",
+  "tipo": "Hotel",
+  "puntuacion": 8.7,
+  "precio": 47200,
+  "imagen1":"./imag/49.webp",
+  "imagen2":"./imag/50.webp"
 },
 {
-  "Iguazu": [{
-    "nombre":"Hotel Saint George",
-    "ubicacion":"Puerto Iguazu",
-    "tipo": "Hotel",
-    "puntuacion": 8.7,
-    "precio": 52500,
-    "imagen1":"",
-    "imagen2":""
-    },
-    {
-    "nombre":"Merit Iguazu Hotel",
-    "ubicacion":"Puerto Iguazu",
-    "tipo": "Hotel",
-    "puntuacion": 8.8,
-    "precio": 54500,
-    "imagen1":"",
-    "imagen2":""
-    },
-    {
-    "nombre":"Village Cataratas",
-    "ubicacion":"Puerto Iguazu",
-    "tipo": "Hotel",
-    "puntuacion": 7.9,
-    "precio": 59500,
-    "imagen1":"",
-    "imagen2":""
-    },
-    {
-    "nombre":"Terra Iguazu Cabañas",
-    "ubicacion":"Puerto Iguazu",
-    "tipo": "Cabañas",
-    "puntuacion": 8.6,
-    "precio": 26500,
-    "imagen1":"",
-    "imagen2":""
-    },
-    {
-      "nombre":"Estrella del Monte",
-    "ubicacion":"Puerto Iguazu",
-    "tipo": "Cabañas",
-    "puntuacion": 7.9,
-    "precio": 24500,
-    "imagen1":"",
-    "imagen2":""
-    },
-    {
-      "nombre":"Costa del Sol Iguazu",
-    "ubicacion":"Puerto Iguazu",
-    "tipo": "Cabañas",
-    "puntuacion": 9.3,
-    "precio": 32700,
-    "imagen1":"",
-    "imagen2":""
-    },
-    {
-      "nombre":"Z Aparts Iguazu",
-    "ubicacion":"Puerto Iguazu",
-    "tipo": "depto",
-    "puntuacion": 9.1,
-    "precio": 41500,
-    "imagen1":"",
-    "imagen2":""
-    },
-    {
-      "nombre":"Naipi Apart",
-    "ubicacion":"Puerto Iguazu",
-    "tipo": "depto",
-    "puntuacion": 8.5,
-    "precio": 38300,
-    "imagen1":"",
-    "imagen2":"",
-    },
-    {
-      "nombre":"Departamentos Tres Fronteras",
-    "ubicacion":"Puerto Iguazu",
-    "tipo": "depto",
-    "puntuacion": 7.7,
-    "precio": 23200,
-    "imagen1":"",
-    "imagen2":"",
-    },
-    {
-      "nombre":"Casa 24",
-    "ubicacion":"Puerto Iguazu",
-    "tipo": "casa",
-    "puntuacion": 7.9,
-    "precio": 41500,
-    "imagen1":"",
-    "imagen2":"",
-    },
-    {
-      "nombre":"Alquiler Cataratas",
-    "ubicacion":"Puerto Iguazu",
-    "tipo": "casa",
-    "puntuacion": 7.2,
-    "precio": 24800,
-    "imagen1":"",
-    "imagen2":"",
-    }
-  ]
+  "nombre":"Monaco Hotel",
+  "ubicacion":"Ushuaia",
+  "tipo": "Hotel",
+  "puntuacion": 7.5,
+  "precio": 35000,
+  "imagen1":"./imag/51.webp",
+  "imagen2":"./imag/52.webp"
 },
 {
-  "TdF":[{
-    "nombre":"Albatros Hotel",
-    "ubicacion":"Ushuaia",
-    "tipo": "Hotel",
-    "puntuacion": 8.7,
-    "precio": 47200,
-    "imagen1":"",
-    "imagen2":"",
-  },
-  {
-    "nombre":"Monaco Hotel",
-    "ubicacion":"Ushuaia",
-    "tipo": "Hotel",
-    "puntuacion": 7.5,
-    "precio": 35000,
-    "imagen1":"",
-    "imagen2":"",
-  },
-  {
-    "nombre":"JM",
-    "ubicacion":"Ushuaia",
-    "tipo": "casa",
-    "puntuacion": 8.3,
-    "precio": 41700,
-    "imagen1":"",
-    "imagen2":""
-  },
-  {
-    "nombre":"Cabaña Las Aguilas",
-    "ubicacion":"Ushuaia",
-    "tipo": "Cabaña",
-    "puntuacion": 9.4,
-    "precio": 28200,
-    "imagen1":"",
-    "imagen2":""
-  },
-  {
-    "nombre":"Pacifico Apartamentos",
-    "ubicacion":"Ushuaia",
-    "tipo": "depto",
-    "puntuacion": 7.9,
-    "precio": 59500,
-    "imagen1":"",
-    "imagen2":""
-  }
-]
+  "nombre":"JM",
+  "ubicacion":"Ushuaia",
+  "tipo": "casa",
+  "puntuacion": 8.3,
+  "precio": 41700,
+  "imagen1":"./imag/53.webp",
+  "imagen2":"./imag/54.webp"
 },
 {
-  "jujuy":[{
-    "nombre":"Altos de la Viña",
-    "ubicacion":"Jujuy",
-    "tipo": "Hotel",
-    "puntuacion": 9.1,
-    "precio": 38500,
-    "imagen1":"",
-    "imagen2":""
-  },
-  {
-    "nombre":"Hotel Spa Termas De Reyes",
-    "ubicacion":"Jujuy",
-    "tipo": "Hotel",
-    "puntuacion": 9.6,
-    "precio": 51500,
-    "imagen1":"",
-    "imagen2":""
-  },
-  {
-    "nombre":"Ecoportal De Piedra",
-    "ubicacion":"Jujuy",
-    "tipo": "Cabaña",
-    "puntuacion": 7.9,
-    "precio": 59500,
-    "imagen1":"",
-    "imagen2":""
-  },
-  {
-    "nombre":"Lo de Agustin",
-    "ubicacion":"Jujuy",
-    "tipo": "casa",
-    "puntuacion": 7.9,
-    "precio": 27200,
-    "imagen1":"",
-    "imagen2":""
-  },
-  {
-    "nombre":"Alto Belgrano",
-    "ubicacion":"Jujuy",
-    "tipo": "depto",
-    "puntuacion": 6.9,
-    "precio": 18200,
-    "imagen1":"",
-    "imagen2":""
-  }
-]
+  "nombre":"Cabaña Las Aguilas",
+  "ubicacion":"Ushuaia",
+  "tipo": "Cabaña",
+  "puntuacion": 9.4,
+  "precio": 28200,
+  "imagen1":"./imag/55.webp",
+  "imagen2":"./imag/56.webp"
+},
+{
+  "nombre":"Pacifico Apartamentos",
+  "ubicacion":"Ushuaia",
+  "tipo": "depto",
+  "puntuacion": 7.9,
+  "precio": 59500,
+  "imagen1":"./imag/57.webp",
+  "imagen2":"./imag/58.webp"
 }
+],
+"jujuy":[{
+  "nombre":"Altos de la Viña",
+  "ubicacion":"Jujuy",
+  "tipo": "Hotel",
+  "puntuacion": 9.1,
+  "precio": 38500,
+  "imagen1":"./imag/59.webp",
+  "imagen2":"./imag/60.webp"
+},
 {
+  "nombre":"Hotel Spa Termas De Reyes",
+  "ubicacion":"Jujuy",
+  "tipo": "Hotel",
+  "puntuacion": 9.6,
+  "precio": 51500,
+  "imagen1":"./imag/61.webp",
+  "imagen2":"./imag/62.webp"
+},
+{
+  "nombre":"Ecoportal De Piedra",
+  "ubicacion":"Jujuy",
+  "tipo": "Cabaña",
+  "puntuacion": 7.9,
+  "precio": 59500,
+  "imagen1":"./imag/63.webp",
+  "imagen2":"./imag/64.webp"
+},
+{
+  "nombre":"Lo de Agustin",
+  "ubicacion":"Jujuy",
+  "tipo": "casa",
+  "puntuacion": 7.9,
+  "precio": 27200,
+  "imagen1":"./imag/65.webp",
+  "imagen2":"./imag/66.webp"
+},
+{
+  "nombre":"Alto Belgrano",
+  "ubicacion":"Jujuy",
+  "tipo": "depto",
+  "puntuacion": 6.9,
+  "precio": 18200,
+  "imagen1":"./imag/67.webp",
+  "imagen2":"./imag/68.webp"
+}
+],
   "Baires":[{
     "nombre":"Hotel Madero",
     "ubicacion":"Buenos Aires",
     "tipo": "Hotel",
     "puntuacion": 8.9,
     "precio": 100500,
-    "imagen1":"",
-    "imagen2":""
+    "imagen1":"./imag/69.webp",
+    "imagen2":"./imag/70.webp"
   },
   {
     "nombre":"HTL City Baires",
@@ -332,8 +324,8 @@
     "tipo": "Hotel",
     "puntuacion": 8.8,
     "precio": 28500,
-    "imagen1":"",
-    "imagen2":""
+    "imagen1":"./imag/71.webp",
+    "imagen2":"./imag/72.webp"
   },
   {
     "nombre":"CH Recoleta Suites",
@@ -341,8 +333,8 @@
     "tipo": "depto",
     "puntuacion": 9.3,
     "precio": 39000,
-    "imagen1":"",
-    "imagen2":""
+    "imagen1":"./imag/73.webp",
+    "imagen2":"./imag/74.webp"
   },
   {
     "nombre":"Great 3bdr",
@@ -350,56 +342,54 @@
     "tipo": "casa",
     "puntuacion": 7.9,
     "precio": 47500,
-    "imagen1":"",
-    "imagen2":""
+    "imagen1":"./imag/75.webp",
+    "imagen2":"./imag/76.webp"
   }
-]
-}
+],
+"Mendoza":[{
+  "nombre":"Argentino Hotel",
+  "ubicacion":"Mendoza",
+  "tipo": "Hotel",
+  "puntuacion": 8.9,
+  "precio": 49500,
+  "imagen1":"./imag/77.webp",
+  "imagen2":"./imag/78.webp"
+},
 {
-  "Mendoza":[{
-    "nombre":"Argentino Hotel",
-    "ubicacion":"Mendoza",
-    "tipo": "Hotel",
-    "puntuacion": 8.9,
-    "precio": 49500,
-    "imagen1":"",
-    "imagen2":""
-  },
-  {
-    "nombre":"Sheraton Mendoza Hotel",
-    "ubicacion":"Mendoza",
-    "tipo": "Hotel",
-    "puntuacion": 9.8,
-    "precio": 105200,
-    "imagen1":"",
-    "imagen2":""
-  },
-  {
-    "nombre":"Mendoza Relax",
-    "ubicacion":"Mendoza",
-    "tipo": "depto",
-    "puntuacion": 7.9,
-    "precio": 35700,
-    "imagen1":"",
-    "imagen2":""
-  },
-  {
-    "nombre":"Oceana House",
-    "ubicacion":"Mendoza",
-    "tipo": "casa",
-    "puntuacion": 7.9,
-    "precio": 59500,
-    "imagen1":"",
-    "imagen2":""
-  },
-  {
-    "nombre":"Cabañas Rio Mendoza",
-    "ubicacion":"Mendoza",
-    "tipo": "Cabaña",
-    "puntuacion": 7.9,
-    "precio": 30800,
-    "imagen1":"",
-    "imagen2":""
-  }
+  "nombre":"Sheraton Mendoza Hotel",
+  "ubicacion":"Mendoza",
+  "tipo": "Hotel",
+  "puntuacion": 9.8,
+  "precio": 105200,
+  "imagen1":"./imag/79.webp",
+  "imagen2":"./imag/80.webp"
+},
+{
+  "nombre":"Mendoza Relax",
+  "ubicacion":"Mendoza",
+  "tipo": "depto",
+  "puntuacion": 7.9,
+  "precio": 35700,
+  "imagen1":"./imag/81.webp",
+  "imagen2":"./imag/82.webp"
+},
+{
+  "nombre":"Oceana House",
+  "ubicacion":"Mendoza",
+  "tipo": "casa",
+  "puntuacion": 7.9,
+  "precio": 59500,
+  "imagen1":"./imag/83.webp",
+  "imagen2":"./imag/84.webp"
+},
+{
+  "nombre":"Cabañas Rio Mendoza",
+  "ubicacion":"Mendoza",
+  "tipo": "Cabaña",
+  "puntuacion": 7.9,
+  "precio": 30800,
+  "imagen1":"./imag/85.webp",
+  "imagen2":"./imag/86.webp"
+}
 ]
 }
