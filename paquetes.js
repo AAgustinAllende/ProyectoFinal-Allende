@@ -4,7 +4,7 @@ let paquetesBariloche = [
         nombre: "Aventura en los Andes",
         destino: "San Carlos de Bariloche",
         duracion: "6 días",
-        precio: 1200,
+        precio: 370000,
         descripcion: "Explora los majestuosos paisajes de los Andes patagónicos.",
         imagen: "./imag/excursion-brc1.jpg"
     },
@@ -13,7 +13,7 @@ let paquetesBariloche = [
         nombre: "Escapada invernal",
         destino: "San Carlos de Bariloche",
         duracion: "4 días",
-        precio: 950,
+        precio: 217650,
         descripcion: "Disfruta del esquí y la nieve en la temporada invernal de Bariloche.",
         imagen: "./imag/brc-exc2.jpg"
     },
@@ -22,7 +22,7 @@ let paquetesBariloche = [
         nombre: "Gastronomía y naturaleza",
         destino: "San Carlos de Bariloche",
         duracion: "5 días",
-        precio: 1100,
+        precio: 315000,
         descripcion: "Saborea la deliciosa comida local mientras exploras la belleza natural de Bariloche.",
         imagen: "./imag/brc-exc3.jpg"
     },
@@ -31,7 +31,7 @@ let paquetesBariloche = [
         nombre: "Aventura en el lago",
         destino: "San Carlos de Bariloche",
         duracion: "3 días",
-        precio: 800,
+        precio: 186980,
         descripcion: "Recorre los lagos de Bariloche en emocionantes actividades acuáticas.",
         imagen: "./imag/brc-exc4.jpg"
     },
@@ -40,7 +40,7 @@ let paquetesBariloche = [
         nombre: "Relax en la montaña",
         destino: "San Carlos de Bariloche",
         duracion: "7 días",
-        precio: 1500,
+        precio: 376000,
         descripcion: "Disfruta de la tranquilidad de la montaña y sus vistas panorámicas.",
         imagen: "./imag/brc-exc5.jpg"
     },
@@ -145,7 +145,7 @@ let packagesMendoza = [
       descripcion: "Descubre las impresionantes Cataratas del Iguazú y su entorno natural en una experiencia única.",
       duracion: "3 días",
       precio: 168460,
-      imagen:""
+      imagen:"./imag/iguazu-exc1.jpg"
     },
     {
       id:"bshysb",
@@ -153,7 +153,7 @@ let packagesMendoza = [
       descripcion: "Sumérgete en la emoción de las cataratas con actividades de rafting y exploración acuática.",
       duracion: "4 días",
       precio: 188650,
-      imagen:""
+      imagen:"./imag/iguazu-exc2.jpg"
     },
     {
       id:"nudst74",
@@ -161,7 +161,7 @@ let packagesMendoza = [
       descripcion: "Adéntrate en la selva circundante y descubre su flora y fauna en una experiencia enriquecedora.",
       duracion: "5 días",
       precio: 207765,
-      imagen:""
+      imagen:"./imag/iguazu-exc3.jpg"
     },
   ];
 
@@ -172,7 +172,7 @@ let packagesMendoza = [
       descripcion: "Explora los paisajes montañosos y las tradiciones culturales de Jujuy en una experiencia inolvidable.",
       duracion: "4 días",
       precio: 198650,
-      imagen:""
+      imagen:"./imag/jujuy1.jpg"
     },
     {
       id:"bdh06sns",
@@ -180,14 +180,14 @@ let packagesMendoza = [
       descripcion: "Vive la magia del Carnaval de Jujuy y participa en festividades llenas de color y música.",
       duracion: "3 días",
       precio: 175990,
-      imagen:""
+      imagen:"./imag/jujuy2.jpg"
     },
     {
       nombre: "Aventura Natural",
       descripcion: "Adéntrate en los parajes naturales de Jujuy, desde quebradas hasta salinas, en una aventura única.",
       duracion: "5 días",
       precio: 212500,
-      imagen:""
+      imagen:"./imag/jujuy3.jpg"
     },
   ];
   

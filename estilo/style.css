@@ -112,6 +112,20 @@ header{
 .carousel-item img{
     height: 160px;
 }
+.hogar{
+    z-index: 0;
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    justify-content:center;
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    align-items: center;
+}
+.pict{
+    width: 100%;
+}
 
 /* seccion paquetes */
 .packs{
@@ -123,6 +137,16 @@ header{
     background-size:cover;
     height: 600px;
     
+}
+#resultados{
+    margin-top: 3%;
+}
+.packsT{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5%;
+    margin-left: 6%;
+    margin-top: 5%;
 }
 .packs img{
     margin-top: 22%;
